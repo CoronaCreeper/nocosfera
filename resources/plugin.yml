@@ -1,0 +1,8 @@
+name: Nocosfera
+version: ${project.version}
+main: nocosfera.Nocosfera
+api-version: 1.16
+authors: [ CoronaCreeper ]
+description: Plugin na nocosfere
+commands:
+  serwer:
