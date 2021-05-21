@@ -5,4 +5,5 @@ api-version: 1.16
 authors: [ CoronaCreeper ]
 description: Plugin na nocosfere
 commands:
-  serwer:
+  info:
+  granica:

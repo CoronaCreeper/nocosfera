@@ -1,7 +1,6 @@
 package nocosfera.commands;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,7 +8,7 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-public class SerwerCommand implements CommandExecutor {
+public class InfoCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
@@ -21,12 +20,11 @@ public class SerwerCommand implements CommandExecutor {
             UUID UUID = p.getUniqueId();
             p.sendMessage(ChatColor.GREEN + "Informacje o serwerze" +
                     "\nSilnik: " + ChatColor.RED + silnik + ChatColor.GREEN +
+                    "\nLokalizacja serwera: " + ChatColor.RED + "Niemcy" + ChatColor.GREEN +
                     "\nGracze: " + ChatColor.RED + onlinegraczy+"/"+maxgraczy + ChatColor.GREEN +
                     "\nTwoje IP: " + ChatColor.RED + IP + ChatColor.GREEN +
                     "\nUUID: " + ChatColor.RED + UUID + ChatColor.GREEN);
-        }else {
-            System.out.println("[Nocosfera] Komenda dostepna tylko dla graczy!");
-        }
+        }else System.out.println("Komenda dostepna tylko dla graczy!");
         return false;
     }
 }
