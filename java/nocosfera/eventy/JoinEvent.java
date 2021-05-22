@@ -1,4 +1,4 @@
-package nocosfera;
+package nocosfera.eventy;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
